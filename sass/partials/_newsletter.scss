@@ -1,0 +1,40 @@
+.newsletter-bg {
+  background-color: $gray-200;
+
+  .newsletter {
+    padding-top: 152px;
+    padding-bottom: 152px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h2 {
+      color: $white;
+      margin-bottom: 20px;
+      @include type-1(h2, desktop);
+    }
+
+    p {
+      color: $white-light;
+      margin-bottom: 40px;
+      @include type-2(p2, desktop);
+    }
+
+    @include responsive(m) {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+
+    @include responsive(s) {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+
+    @include responsive(xs) {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+  }
+}

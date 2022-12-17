@@ -1,0 +1,61 @@
+.header-bg {
+  background-color: $gray-600;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    .header-nav {
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+      }
+
+      .mobile {
+        display: none;
+      }
+    }
+
+    @include responsive(m) {
+      .header-nav {
+        ul {
+          display: none;
+        }
+
+        .mobile {
+          display: block;
+        }
+      }
+    }
+
+    @include responsive(s) {
+      .header-nav {
+        ul {
+          display: none;
+        }
+
+        .mobile {
+          display: block;
+        }
+      }
+    }
+
+    @include responsive(xs) {
+      .header-nav {
+        ul {
+          display: none;
+        }
+
+        .mobile {
+          display: block;
+        }
+      }
+    }
+  }
+}

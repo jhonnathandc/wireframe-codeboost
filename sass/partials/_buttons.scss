@@ -1,0 +1,39 @@
+.menu-item {
+  color: $gray-400;
+  font-family: $font-1;
+  font-size: 1rem;
+  line-height: 1.05;
+  font-weight: 500;
+  text-align: center;
+
+  background-color: $gray-500;
+  padding: 12px 24px;
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: $white;
+    background-color: #acb4bf;
+  }
+}
+
+.btn {
+  color: $gray-100;
+  font-family: $font-1;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+
+  background-color: $primary-color;
+  padding: 20px 40px;
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.btn.menu {
+  padding: 12px 24px;
+}

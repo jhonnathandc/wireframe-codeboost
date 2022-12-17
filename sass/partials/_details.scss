@@ -1,0 +1,226 @@
+.details-bg {
+  background-color: $gray-100;
+
+  .details {
+    padding-top: 104px;
+    padding-bottom: 120px;
+
+    @include responsive(m) {
+      padding-top: 52px;
+      padding-bottom: 55px;
+    }
+
+    @include responsive(s) {
+      padding-top: 52px;
+      padding-bottom: 55px;
+    }
+
+    @include responsive(xs) {
+      padding-top: 52px;
+      padding-bottom: 55px;
+    }
+
+    .details-cards {
+      border-bottom: 1px solid $white-light;
+      padding-bottom: 122px;
+
+      .cards-title {
+        text-align: center;
+
+        h2 {
+          color: $white;
+          margin-bottom: 8px;
+          @include type-1(h2, desktop);
+        }
+
+        p {
+          color: $white-light;
+          margin-bottom: 48px;
+          @include type-2(p2, desktop);
+        }
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+
+        .card {
+          padding: 64px 48px 80px 48px;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+
+          cursor: pointer;
+          transition: all 0.3s ease;
+
+          &:hover {
+            transform: scale(1.05);
+          }
+
+          img {
+            margin-bottom: 40px;
+          }
+        }
+
+        .card.dark {
+          background-color: $gray-200;
+
+          h3 {
+            color: $white;
+            margin-bottom: 8px;
+            @include type-1(h3, desktop);
+          }
+
+          p {
+            color: $white-light;
+            @include type-2(p2, desktop);
+          }
+        }
+
+        .card.light {
+          background-color: $white;
+
+          h3 {
+            color: $gray-100;
+            margin-bottom: 8px;
+            @include type-1(h3, desktop);
+          }
+
+          p {
+            color: $gray-300;
+            @include type-2(p2, desktop);
+          }
+        }
+      }
+
+      @include responsive(m) {
+        padding-bottom: 56px;
+
+        ul {
+          flex-direction: column;
+
+          .card {
+            padding: 32px 48px 40px 48px;
+
+            img {
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+
+      @include responsive(s) {
+        padding-bottom: 56px;
+
+        ul {
+          flex-direction: column;
+
+          .card {
+            padding: 32px 48px 40px 48px;
+
+            img {
+              margin-bottom: 20px;
+            }
+
+            .details-cards {
+              .cards-title {
+                h2 {
+                  @include type-1(h2, mobile);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      @include responsive(xs) {
+        padding-bottom: 56px;
+
+        ul {
+          flex-direction: column;
+
+          .card {
+            padding: 32px 48px 40px 48px;
+
+            img {
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .details-images {
+      padding-top: 122px;
+
+      .images-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 56px;
+
+        h2 {
+          color: $white;
+          margin-bottom: 8px;
+          @include type-1(h2, desktop);
+        }
+
+        p {
+          color: $white-light;
+          @include type-2(p2, desktop);
+        }
+      }
+
+      .gallery-images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 32px 16px;
+
+        li {
+          transition: all 0.3s ease;
+          cursor: pointer;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+
+      @include responsive(m) {
+        padding-top: 56px;
+      }
+
+      @include responsive(s) {
+        padding-top: 56px;
+
+        .images-title {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 24px;
+        }
+
+        .gallery-images {
+          justify-content: center;
+        }
+      }
+
+      @include responsive(xs) {
+        padding-top: 56px;
+
+        .images-title {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 24px;
+        }
+
+        .gallery-images {
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
